@@ -6,4 +6,5 @@ export const HeaderStyled = styled.div`
     justify-content: center;
     color: purple;
     font-weight: bold;
+    background-color: red;
 `
