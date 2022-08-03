@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
 export const HeaderStyled = styled.div`
-    padding: 20px 0;
+    padding: 10px 0;
     display: flex;
     justify-content: center;
-    color: purple;
+    color: white;
     font-weight: bold;
-    background-color: red;
+    background-color: #1F1F1F;
+    border-radius: 10px;
+    width: 60%;
+    margin-bottom: 20px;
 `
