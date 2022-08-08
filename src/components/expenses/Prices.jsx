@@ -5,7 +5,7 @@ function Prices(props) {
     return (
 
         <PricesStyled>
-            <h3>{props.price}</h3>
+            <h3>N{props.price}</h3>
         </PricesStyled>
 
     )

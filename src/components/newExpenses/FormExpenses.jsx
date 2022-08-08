@@ -5,9 +5,10 @@ import {
     NewEexpenseContainer,
     New_expense__title,
     New_expense__amount,
-    New_expense__date
-
+    New_expense__date,
+    CancelContainer
 } from '../../style/FormExpenses.style';
+import Button from '../expenses/inc/Button';
 
 
 
@@ -47,6 +48,7 @@ function FormExpenses(props) {
         setenteredTitle("")
         setenteredDate("")
     }
+
 
     return (
         <form onSubmit={formSubmitionHandler}>
@@ -89,6 +91,7 @@ function FormExpenses(props) {
                 </NewEexpenseContainer>
                 <New_expense_container_button>
                     <button>Add New Expenses</button>
+                    <CancelContainer onClick={props.hideBgHandler}>Cancel</CancelContainer>
                 </New_expense_container_button>
 
             </NewExpenseCardInner>

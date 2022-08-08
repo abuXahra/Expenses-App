@@ -43,10 +43,21 @@ export const NewExpenseCardInner = styled.div`
 export const New_expense_container_button = styled.div`
     display: flex;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: space-between;
     margin: 10px 0;
-`
 
+`
+export const CancelContainer = styled.div`
+    color: white;
+    background-color: #510674;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    font-weight: bold;
+    cursor: pointer;
+`
 
 
 export const NewEexpenseContainer = styled.div`

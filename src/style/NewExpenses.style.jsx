@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const New_expense_card = styled.div`
-    display: flex;
+    display: ${({ disp }) => disp};
     background-color: brown;
     border-radius: 10px;
     padding: 20px;

@@ -5,7 +5,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 width: 100%;
-height: auto;
+height: 100vh;
 font-size: 14px;
 font-family: sans-serif;
 flex-direction: column;

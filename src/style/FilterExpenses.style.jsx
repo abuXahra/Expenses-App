@@ -22,3 +22,10 @@ export const FiltExpensStyled = styled.div`
         }
     }
 `
+
+
+export const AddDateStyled = styled.span`
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 25px;
+`

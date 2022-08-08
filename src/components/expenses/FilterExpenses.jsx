@@ -1,8 +1,9 @@
 
 
 import React from 'react'
-import { FiltExpensStyled } from '../../style/FilterExpenses.style'
+import { FiltExpensStyled, AddDateStyled } from '../../style/FilterExpenses.style'
 import { years } from '../data/Years'
+import { BiCommentAdd } from 'react-icons/bi'
 
 function FilterExpenses(props) {
 
@@ -13,7 +14,11 @@ function FilterExpenses(props) {
 
     return (
         <FiltExpensStyled>
-            <label>Filter Expenses: {props.valueSelected}</label>
+            <label>Filter Expenses:
+                <AddDateStyled>
+                    <BiCommentAdd onClick={""} />
+                </AddDateStyled>
+            </label>
             <select value={props.valueSelected} onChange={onChangeSelectedHandler}>
                 {
                     years.map((item, index) => (
