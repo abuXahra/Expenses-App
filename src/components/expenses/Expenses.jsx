@@ -6,7 +6,7 @@ import Item from './Item'
 
 function Expenses(props) {
 
-    const [filterYear, setfilterSeleted] = useState('');
+    const [filterYear, setfilterSeleted] = useState('2022');
 
 
 
