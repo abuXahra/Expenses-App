@@ -16,6 +16,7 @@ function App() {
   //stateful Dummy object  
   const [expenses, setexpenses] = useState(DUMMY_EXPENSES);
 
+
   // Adding User Input to Dummy object
   const newExpenseHandler = (newExpenseItem) => {
     setexpenses((prevExenses) => {
@@ -23,7 +24,6 @@ function App() {
     });
     console.log(newExpenseItem)
   }
-
 
   const [disp, setdisp] = useState("none")
   const [bghide, setbghide] = useState("flex")
