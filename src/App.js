@@ -50,6 +50,13 @@ function App() {
   }
 
 
+  //delete expense handler
+  const deleteHandler = (index) => {
+    const newExpensList = expenses;
+    newExpensList.splice(index, 1);
+    setexpenses([...newExpensList])
+  }
+
   return (
     <BodyStyled>
       <Head />
@@ -63,7 +70,12 @@ function App() {
       <NewExpenses newExpenseHandler={newExpenseHandler} disp={disp} hideBgHandler={hideBgHandler2} />
 
       {/* Expenses */}
-      <Expenses years={years} expenses={expenses} onSaveInputYearHandler={onSaveInputYearHandler} />
+      <Expenses
+        years={years}
+        expenses={expenses}
+        onSaveInputYearHandler={onSaveInputYearHandler}
+        deleteHandler={deleteHandler}
+      />
     </BodyStyled>
   );
 }

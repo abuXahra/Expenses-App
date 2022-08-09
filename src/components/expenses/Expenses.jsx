@@ -6,7 +6,7 @@ import Item from './Item'
 
 function Expenses(props) {
 
-    const [filterYear, setfilterSeleted] = useState(props.years[0].title);
+    const [filterYear, setfilterSeleted] = useState("2022");
 
 
 
@@ -37,7 +37,7 @@ function Expenses(props) {
 
             {
                 filteredExpenses.length > 0 ? (filteredExpenses.map((item) => (
-                    <Item key={item.id} expenses={item} />
+                    <Item deleteHandler={props.deleteHandler} key={item.id} expenses={item} />
                 ))) : (
                     <p>NO ITEM FOUND</p>
                 )

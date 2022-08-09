@@ -1,6 +1,7 @@
 import React from 'react'
 import { DateItemStyled, ItemStyled } from '../../style/Item.style'
 import Date from './Date'
+import DeleteExpenses from './inc/DeleteExpenses'
 import Prices from './Prices'
 
 
@@ -18,6 +19,7 @@ function Item(props) {
                 <Date text={props.expenses.title} date={props.expenses.date} />
             </DateItemStyled>
             <Prices price={props.expenses.amount} />
+            <DeleteExpenses deleteHandler={props.deleteHandler} />
         </ItemStyled>
 
     )
