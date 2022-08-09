@@ -45,7 +45,14 @@ export const New_expense_container_button = styled.div`
     width: 100%;
     justify-content: space-between;
     margin: 10px 0;
+    align-items: center;
+  
 
+@media (max-width:768px) {
+   button{
+ width: auto;
+   }   
+}
 `
 export const CancelContainer = styled.div`
     color: white;
@@ -57,6 +64,9 @@ export const CancelContainer = styled.div`
     width: 100px;
     font-weight: bold;
     cursor: pointer;
+    height: 45px;
+
+    
 `
 
 

@@ -10,4 +10,8 @@ export const HeaderStyled = styled.div`
     border-radius: 10px;
     width: 60%;
     margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+        width: 90%;
+    }
 `

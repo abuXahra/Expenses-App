@@ -1,4 +1,4 @@
-export const years = [
+export const YEARS = [
     {
         label: 2022,
         title: 2022

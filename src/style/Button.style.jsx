@@ -13,7 +13,6 @@ export const ButtonStyled = styled.button`
         @media (max-width:768px) {
 
     font-size: 12px;
-    width: 100%;
     margin-top: 10px;
 }
     

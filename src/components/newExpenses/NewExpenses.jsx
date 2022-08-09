@@ -15,7 +15,6 @@ function NewExpenses(props) {
 
     return (
         <New_expense_card disp={props.disp} >
-
             <FormExpenses onSaveHandler={onSaveHandler} hideBgHandler={props.hideBgHandler} />
         </New_expense_card>
     )

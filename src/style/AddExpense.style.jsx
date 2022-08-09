@@ -7,4 +7,8 @@ export const AddExpStyled = styled.div`
    display: ${({ bghide }) => bghide};
    justify-content: center;
    width: 60%;
+
+   @media (max-width:768px) {
+      width: 90%;
+   }
 `

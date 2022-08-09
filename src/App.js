@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import { DUMMY_EXPENSES } from "./components/data/ExpensesDummy";
 import Head from "./components/expenses/Head";
 import AddExpense from "./components/expenses/inc/AddExpense";
+import { YEARS } from "./components/data/Years";
 
 
 
@@ -39,13 +40,30 @@ function App() {
   }
 
 
+  const [years, setyear] = useState(YEARS)
+
+  // saving the new entered year to year list
+  const onSaveInputYearHandler = (newYearItem) => {
+    setyear((prevYear) => {
+      return [newYearItem, ...prevYear]
+    })
+  }
+
 
   return (
     <BodyStyled>
       <Head />
-      <AddExpense hideBgHandler={hideBgHandler} bghide={bghide} />
+
+      {/* Add Expenses Button */}
+      <AddExpense
+        hideBgHandler={hideBgHandler}
+        bghide={bghide} />
+
+      {/* Add Expenses form */}
       <NewExpenses newExpenseHandler={newExpenseHandler} disp={disp} hideBgHandler={hideBgHandler2} />
-      <Expenses expenses={expenses} />
+
+      {/* Expenses */}
+      <Expenses years={years} expenses={expenses} onSaveInputYearHandler={onSaveInputYearHandler} />
     </BodyStyled>
   );
 }

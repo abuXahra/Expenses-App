@@ -5,12 +5,12 @@ display: flex;
 justify-content: center;
 align-items: center;
 width: 100%;
-height: 100vh;
+height: auto;
 font-size: 14px;
 font-family: sans-serif;
 flex-direction: column;
 padding: 20px 0;
 
-    background-color: #0ecbd81a;
+    /* background-color: #0ecbd81a; */
 
 `

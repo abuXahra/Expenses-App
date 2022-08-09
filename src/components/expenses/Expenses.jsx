@@ -6,7 +6,7 @@ import Item from './Item'
 
 function Expenses(props) {
 
-    const [filterYear, setfilterSeleted] = useState('2022');
+    const [filterYear, setfilterSeleted] = useState(props.years[0].title);
 
 
 
@@ -19,10 +19,20 @@ function Expenses(props) {
         return expense.date.getFullYear().toString() === filterYear;
     })
 
+    //new Date receiving function
+    const onInputYearHandler = (newValue) => {
+        props.onSaveInputYearHandler(newValue);
+        console.log(newValue);
+    }
 
     return (
         <Container>
-            <FilterExpenses valueSelected={filterYear} onChangeSelectHandler={onChangeSelectHandler} />
+            <FilterExpenses
+                valueSelected={filterYear}
+                onChangeSelectHandler={onChangeSelectHandler}
+                onInputYearHandler={onInputYearHandler}
+                years={props.years}
+            />
             {/* {expenseContents} */}
 
             {

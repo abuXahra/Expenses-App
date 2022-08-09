@@ -40,8 +40,6 @@ function FormExpenses(props) {
             amount: enteredAmount,
             date: new Date(enteredDate)
         }
-
-
         props.onSaveHandler(newExpenses)
         console.log(newExpenses);
         setenteredAmount("")
@@ -55,7 +53,7 @@ function FormExpenses(props) {
             <NewExpenseCardInner>
                 <NewEexpenseContainer>
                     <New_expense__title>
-                        <label>Title {enteredTitle}</label>
+                        <label>Title</label>
                         <input
                             type="text"
                             required
@@ -65,7 +63,7 @@ function FormExpenses(props) {
                     </New_expense__title>
 
                     <New_expense__amount>
-                        <label>Amount: {enteredAmount}</label>
+                        <label>Amount</label>
                         <input
                             type="number"
                             min="0.01"
@@ -78,11 +76,11 @@ function FormExpenses(props) {
                 </NewEexpenseContainer>
                 <NewEexpenseContainer>
                     <New_expense__date>
-                        <label>Date {enteredDate}</label>
+                        <label>Date </label>
                         <input
                             type="date"
                             min="2015-01-01"
-                            max="2022-12-01"
+                            max="2030-12-01"
                             onChange={dateChangeHandler}
                             value={enteredDate}
                             required
