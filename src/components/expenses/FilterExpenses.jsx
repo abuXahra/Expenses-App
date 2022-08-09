@@ -74,7 +74,7 @@ function FilterExpenses(props) {
                                 step="0.01"
                                 inputHandler={inputHandler}
                                 value={enteredValue}
-                                placeHolder="0000"
+                                placeHolder="Enter year..."
                             />
                             <AddYearButton>Add Expense Year</AddYearButton>
                         </form>
