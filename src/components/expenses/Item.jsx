@@ -19,7 +19,7 @@ function Item(props) {
                 <Date text={props.expenses.title} date={props.expenses.date} />
             </DateItemStyled>
             <Prices price={props.expenses.amount} />
-            <DeleteExpenses deleteHandler={props.deleteHandler} />
+            <DeleteExpenses deleteHandler={props.deleteHandler} id={props.id} />
         </ItemStyled>
 
     )

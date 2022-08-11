@@ -51,10 +51,8 @@ function App() {
 
 
   //delete expense handler
-  const deleteHandler = (index) => {
-    const newExpensList = expenses;
-    newExpensList.splice(index, 1);
-    setexpenses([...newExpensList])
+  const deleteHandler = (id) => {
+    setexpenses(items => items.filter((item) => item.id !== id));
   }
 
   return (

@@ -37,7 +37,7 @@ function Expenses(props) {
 
             {
                 filteredExpenses.length > 0 ? (filteredExpenses.map((item) => (
-                    <Item deleteHandler={props.deleteHandler} key={item.id} expenses={item} />
+                    <Item deleteHandler={props.deleteHandler} key={item.id} id={item.id} expenses={item} />
                 ))) : (
                     <p>NO ITEM FOUND</p>
                 )
