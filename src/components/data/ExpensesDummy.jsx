@@ -12,19 +12,19 @@ export const DUMMY_EXPENSES = [
         id: 2,
         title: 'House Insurance',
         amount: 300.67,
-        date: new Date(2022, 9, 28)
+        date: new Date(2023, 9, 28)
     },
     {
         id: 3,
         title: 'Life Insurance',
         amount: 500.67,
-        date: new Date(2022, 10, 28)
+        date: new Date(2023, 10, 28)
     },
     {
         id: 4,
         title: 'Goods Insurance',
         amount: 100.67,
-        date: new Date(2022, 11, 28),
+        date: new Date(2023, 11, 28),
     },
 ]
 

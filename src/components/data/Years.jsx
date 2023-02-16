@@ -4,6 +4,10 @@ export const YEARS = [
         title: 2022
     },
     {
+        label: 2022,
+        title: 2022
+    },
+    {
         label: 2021,
         title: 2021
     },
