@@ -11,7 +11,6 @@ function Item(props) {
 
     // const styless = { display: "flex", alignItems: "center", flex: 1 }
 
-
     return (
 
         <ItemStyled >

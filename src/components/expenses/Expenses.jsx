@@ -6,9 +6,7 @@ import Item from './Item'
 
 function Expenses(props) {
 
-    const [filterYear, setfilterSeleted] = useState("2022");
-
-
+    const [filterYear, setfilterSeleted] = useState("2023");
 
     const onChangeSelectHandler = (valueSelected) => {
         setfilterSeleted(valueSelected);
@@ -41,11 +39,7 @@ function Expenses(props) {
                 ))) : (
                     <p>NO ITEM FOUND</p>
                 )
-
             }
-
-
-
         </Container>
     )
 }
